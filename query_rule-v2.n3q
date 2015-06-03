@@ -1,0 +1,14 @@
+prefix e: <http://eulersharp.sourceforge.net/2003/03swap/log-rules#>
+prefix omop: <http://www.salusproject.eu/ontology/omop#>
+
+  {	 
+	?person omop:yearOfBirth ?yearOfBirth. 
+	[] e:optional {?person omop:monthOfBirth ?monthOfBirth.}.
+  } => {
+	?person omop:yearOfBirth ?yearOfBirth. 
+	?person omop:monthOfBirth ?monthOfBirth.}.
+	
+  {	?person omop:gender_source_value ?gender. 
+  } => {
+	?person omop:gender_source_value ?gender. }.
+		
