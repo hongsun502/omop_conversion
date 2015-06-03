@@ -1,0 +1,14 @@
+prefix schema: <http://schema.org/>
+prefix func: <http://www.w3.org/2007/rif-builtin-function#>
+prefix omop: <http://www.salusproject.eu/ontology/omop#>
+
+  {	?person schema:gender ?gender.
+  } => {
+	?person omop:gender_source_value ?gender. }.
+	
+  {	?person schema:birthDate ?birthdate.
+	(?birthdate) func:year-from-dateTime ?yearOfBirth.
+	(?birthdate) func:month-from-dateTime ?monthOfBirth.
+  } => {
+	?person omop:yearOfBirth ?yearOfBirth. 
+	?person omop:monthOfBirth ?monthOfBirth.}.
