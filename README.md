@@ -1,7 +1,7 @@
 # omop_conversion
 sample OMOP converison rules
 
-*FILES:
+* FILES:
 
 data.ttl contains two sample patient, patient 1 contians  both gender and birth date while patient 2 contains only gender info.
 
