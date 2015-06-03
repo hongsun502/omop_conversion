@@ -1,0 +1,6 @@
+prefix schema: <http://schema.org/>
+
+<htttp://example.org/Patient/1> schema:gender "Male".
+<htttp://example.org/Patient/1> schema:birthDate "1960-02-20T00:00:00+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<htttp://example.org/Patient/2> schema:gender "Male".
