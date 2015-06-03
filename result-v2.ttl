@@ -1,0 +1,15 @@
+#Processed by Id: euler.yap 8028 2015-05-07 09:13:19Z josd
+#eye --nope data.ttl inference_rule.n3 --query query_rule-v2.n3q
+
+PREFIX schema: <http://schema.org/>
+PREFIX func: <http://www.w3.org/2007/rif-builtin-function#>
+PREFIX omop: <http://www.salusproject.eu/ontology/omop#>
+PREFIX e: <http://eulersharp.sourceforge.net/2003/03swap/log-rules#>
+
+<htttp://example.org/Patient/1> omop:gender_source_value "Male".
+<htttp://example.org/Patient/2> omop:gender_source_value "Male".
+<htttp://example.org/Patient/1> omop:yearOfBirth 1960 .
+<htttp://example.org/Patient/1> omop:monthOfBirth 2 .
+
+#ENDS 0.051 [sec] IO=7/4 TC=6 TP=22 BC=0 BP=0 PM=0 CM=0 FM=0 AM=0
+
