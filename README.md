@@ -2,11 +2,12 @@
 sample OMOP converison rules
 
 FILES:
+
 data.ttl contains two sample patient, patient 1 contians  both gender and birth date while patient 2 contains only gender info.
 
-inference_rule.n3 contains the conversion rule displayed in Lisiting 1 of the paper.
+inference_rule.n3 contains two sample SCHEMA to OMOP conversion rule.
 
-query_rule.n3q contains the filtering rule displayed in Listing 2 of the paper.
+query_rule.n3q contains the filtering rule which request both gender and year of birth as premise.
 
 query_rule-v2.n3q contains another filtering rule, which does not introduce the constraint as query_rule.n3q did.
 
@@ -29,5 +30,4 @@ eye data.ttl inference_rule.n3 --query query_rule.n3q >proof.n3
 
 eye data.ttl inference_rule.n3 --query query_rule-v2.n3q >proof-v2.n3
 
-In the generated proofs, the object of r:gives shows the conclusions of each conversion process (as what displayed in result.ttl and result-v2.ttl).
-The remaining of the proofs records actions such as data extractions and inferences that leads to the conclusions.
+In the generated proofs, the object of r:gives shows the conclusions of each conversion process (as what displayed in result.ttl and result-v2.ttl). The remaining of the proofs records actions such as data extractions and inferences that leads to the conclusions.
